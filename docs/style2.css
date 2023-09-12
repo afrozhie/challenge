@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: slategray;
+}
+
+.nav {
+    position: fixed;
+    background-color: rgba(32, 99, 77, 0.437);
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li {
+    list-style: none;
+    margin-left: 10px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: aquamarine;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav ul li a:hover {
+    background-color: aquamarine;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.hero {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#landing {
+    height: 100vh;
+}
+
+#landing h1 {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    right: 0;
+    left: 200px;
+    font-size: 120px;
+    color: #fff;
+    text-align: center;
+}
+
+.mid-img {
+    z-index: 2;
+}
+
+.sec-img {
+    z-index: 4;
+}
+
+.top-img {
+    z-index: 5;
+}
+
+.moon-img {
+    z-index: 6;
+}
+
+.btn {
+    position: absolute;
+    top: 80%;
+    z-index: 9;
+    margin: 0 auto;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    background-color: aquamarine;
+    color: #fff;
+    font-size: 25px;
+    box-shadow: 5px 0 15px rgba(85, 85, 85, 0.8);
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: aquamarine;
+}
+
+#landing::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, aquamarine, transparent);
+    z-index: 6;
+}
+
+#about {
+    padding: 70px 0;
+    line-height: 25px;
+    color: #fff;
+    background-color: aquamarine;
+
+}
+
+.content {
+    z-index: 5;
+    position: relative;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content hr {
+    width: 30%;
+    border: 1px solid #fff;
+    text-align: center;
+    display: inline-block;
+}
+
+.content p {
+    text-align: justify;
+    text-indent: 100px;
+}
